@@ -1,0 +1,78 @@
+import { Product } from '@/stores/cartStore';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Premium Pork Chops',
+    description: 'Thick-cut, bone-in pork chops perfect for grilling or pan-searing. Juicy and tender with excellent marbling.',
+    price: 18.99,
+    image: 'https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&h=300&fit=crop',
+    weight: '1 lb',
+    category: 'Chops',
+  },
+  {
+    id: '2',
+    name: 'Pork Tenderloin',
+    description: 'The most tender cut of pork, lean and versatile. Perfect for roasting or slicing into medallions.',
+    price: 14.99,
+    image: 'https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop',
+    weight: '1.5 lb',
+    category: 'Roasts',
+  },
+  {
+    id: '3',
+    name: 'Baby Back Ribs',
+    description: 'Tender and meaty ribs, perfect for slow cooking or smoking. Fall-off-the-bone delicious.',
+    price: 24.99,
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop',
+    weight: '2 lb rack',
+    category: 'Ribs',
+  },
+  {
+    id: '4',
+    name: 'Ground Pork',
+    description: 'Freshly ground pork, perfect for meatballs, dumplings, or any recipe calling for ground meat.',
+    price: 8.99,
+    image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400&h=300&fit=crop',
+    weight: '1 lb',
+    category: 'Ground',
+  },
+  {
+    id: '5',
+    name: 'Pork Belly',
+    description: 'Rich and fatty pork belly, ideal for braising, making bacon, or crispy pork belly dishes.',
+    price: 12.99,
+    image: 'https://images.unsplash.com/photo-1623043453814-e39bf5383abc?w=400&h=300&fit=crop',
+    weight: '2 lb',
+    category: 'Specialty',
+  },
+  {
+    id: '6',
+    name: 'Bone-In Ham',
+    description: 'Traditional bone-in ham, perfect for holiday dinners or Sunday roasts. Naturally smoked.',
+    price: 32.99,
+    image: 'https://images.unsplash.com/photo-1504973960431-1c467e159aa4?w=400&h=300&fit=crop',
+    weight: '5 lb',
+    category: 'Ham',
+  },
+  {
+    id: '7',
+    name: 'Pork Shoulder',
+    description: 'Perfect for pulled pork and slow cooking. Well-marbled for maximum flavor and tenderness.',
+    price: 15.99,
+    image: 'https://images.unsplash.com/photo-1602473812169-3f8f43a3c616?w=400&h=300&fit=crop',
+    weight: '3 lb',
+    category: 'Roasts',
+  },
+  {
+    id: '8',
+    name: 'Artisan Sausages',
+    description: 'Handcrafted pork sausages with traditional herbs and spices. Perfect for grilling.',
+    price: 11.99,
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop',
+    weight: '1 lb (4 links)',
+    category: 'Sausages',
+  },
+];
+
+export const categories = [...new Set(products.map((p) => p.category))];
